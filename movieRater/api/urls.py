@@ -1,7 +1,5 @@
-from django.contrib import admin
 from django.urls import path
 from django.conf.urls import include
-from python.djangoReact.movieRater.api.views import MovieViewSet
 from rest_framework import routers
 from .views import MovieViewSet, RatingViewSet
 
