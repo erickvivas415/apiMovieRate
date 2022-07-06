@@ -17,7 +17,7 @@ function App() {
       <Header info="This is my message 2"
         myNumber="6"/>
       <p>Main content</p>
-      <Footer />
+      <Footer trademark="Page by @erickvivas"/>
     </div>
   );
 }
