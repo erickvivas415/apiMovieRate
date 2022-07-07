@@ -6,6 +6,9 @@ import { Header } from './components/header';
 import { Footer } from './components/footer';
 
 
+function createAlert() {
+  alert("Hello!");
+}
 
 
 
@@ -17,7 +20,8 @@ function App() {
       <Header info="This is my message 2"
         myNumber="6"/>
       <p>Main content</p>
-      <Footer trademark="Page by @erickvivas"/>
+      <Footer trademark="Page by @erickvivas"
+      myAlert={createAlert}/>
     </div>
   );
 }
