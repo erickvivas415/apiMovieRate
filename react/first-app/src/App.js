@@ -10,6 +10,15 @@ function createAlert() {
   alert("Hello!");
 }
 
+function ShowMessage(props) {
+  if (props.toShow) {
+    return <h2>My Message</h2>;
+  } else {
+    return <h2>Forbidden</h2>;
+  }
+
+  
+}
 
 
 function App() {
@@ -21,7 +30,8 @@ function App() {
         myNumber="6"/>
       <p>Main content</p>
       <Footer trademark="Page by @erickvivas"
-      myAlert={createAlert}/>
+        myAlert={createAlert}/>
+        <ShowMessage toShow={false}/>
     </div>
   );
 }
