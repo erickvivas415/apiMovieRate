@@ -16,24 +16,20 @@ function ShowMessage(props) {
   } else {
     return <h2>Forbidden</h2>;
   }
-
-  
 }
 
 
 function App() {
-  return (
-    <div className="App">
-      <Header info="This is my message"
-        myNumber="6"/>
-      <Header info="This is my message 2"
-        myNumber="6"/>
-      <p>Main content</p>
-      <Footer trademark="Page by @erickvivas"
-        myAlert={createAlert}/>
-        <ShowMessage toShow={false}/>
-    </div>
-  );
+
+  const userlogin = true;
+    return (
+      <div className="App">
+        <Header info="This is my message"/>
+        <p>Main content</p>
+        <Footer trademark="Page by @erickvivas"
+          myAlert={createAlert}/>
+      </div>
+      );
 }
 
 export default App;
